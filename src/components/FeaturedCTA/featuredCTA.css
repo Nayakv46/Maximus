@@ -1,0 +1,103 @@
+.maximus__featuredCTA{
+    background: url('../../assets/featuredctabg.png');
+    height: 210px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.625rem;
+}
+
+.maximus__featuredCTA-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1250px;
+    font-family: var(--font-family);
+
+}
+
+.maximus__featuredCTA-content > h2 {
+    flex: 1;
+    font-size: 37px;
+    color: white;
+    max-width: 720px;
+}
+
+.maximus__featuredCTA-content > a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    height: 55px;
+    width: 200px;
+
+    gap: 0.25rem;
+}
+.maximus__featuredCTA-content > a > svg{
+    color: var(--color-red);
+    margin-right: -0.5rem;
+}
+
+.maximus__featuredCTA-content > a::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 53px;
+    border: 2px solid rgba(255,255,255,.363);
+    top: -12px;
+    left: 12px;
+    transition: all 400ms;
+}
+
+.maximus__featuredCTA-content > a:hover::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 51px;
+    border: 2px solid rgba(255,255,255);
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    transition: all 400ms;
+}
+
+@media screen and (max-width: 1000px){
+    .maximus__featuredCTA{
+        background: rgba(255, 3, 54, 1);
+        padding: 1rem 1.625rem;
+        height: auto;
+    }
+    .maximus__featuredCTA-content{
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+    .maximus__featuredCTA-content > h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .maximus__featuredCTA-content > h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .maximus__featuredCTA-content > h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .maximus__featuredCTA-content > h2 {
+        font-size: 24px;
+    }
+}

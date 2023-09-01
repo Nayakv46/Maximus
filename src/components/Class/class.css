@@ -1,0 +1,169 @@
+.classBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 2rem;
+    height: 450px;
+    border-radius: 1rem;
+}
+
+.classBox > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004a;
+    border-radius: 1rem;
+    z-index: 0;
+}
+
+.classBox_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.325rem;
+}
+
+.classBox_content > p{
+    font-size: 27px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    color: #fff;
+    z-index: 2;
+}
+
+.classBox_content > span {
+    position: absolute;
+    top: 2.5rem;
+    height: 4px;
+    width: 50px;
+    background: var(--color-red);
+}
+
+.classBox_content-info{
+    display: flex;
+    gap: 1rem;
+}
+
+.classBox_content-info > p{
+    font-family: var(--font-family);
+    color: #ffffffe1;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+
+.cycling-bg{
+    background: url("../../assets/ClassesBackgrounds/cycling-bg.jpg");
+}
+
+.meditation-bg{
+    background: url("../../assets/ClassesBackgrounds/meditation-bg.jpg");
+}
+
+.boxing-bg{
+    background: url("../../assets/ClassesBackgrounds/boxing-bg.jpg");
+}
+
+.karate-bg{
+    background: url("../../assets/ClassesBackgrounds/karate-bg.jpg");
+}
+
+
+.powerlifting-bg{
+    background: url("../../assets/ClassesBackgrounds/powerlifting-bg.jpg");
+}
+
+.workout-bg{
+    background: url("../../assets/ClassesBackgrounds/workout-bg.jpg");
+}
+
+.crossfit-bg{
+    background: url("../../assets/ClassesBackgrounds/crossfit-bg.jpg");
+}
+
+.running-bg{
+    background: url("../../assets/ClassesBackgrounds/running-bg.jpg");
+}
+
+.bodybuilding-bg{
+    background: url("../../assets/ClassesBackgrounds/bodybuilding-bg.jpg");
+}
+
+.mma-bg{
+    background: url("../../assets/ClassesBackgrounds/mma-bg.jpg");
+}
+
+.yoga-bg{
+    background: url("../../assets/ClassesBackgrounds/yoga-bg.jpg");
+}
+
+.fitness-bg{
+    background: url("../../assets/ClassesBackgrounds/fitness-bg.jpg");
+}
+
+.cycling-bg, .meditation-bg,
+.boxing-bg, .karate-bg, .workout-bg{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.powerlifting-bg, .crossfit-bg, .running-bg,
+.bodybuilding-bg, .mma-bg, .yoga-bg, .fitness-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.classBox_content > a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #ffffff;
+    height: 55px;
+    width: 200px;
+    top: 0;
+    gap: 0.25rem;
+    transition: all 400ms;
+}
+    
+
+.classBox_content > a > svg{
+    color: var(--color-red);
+    margin-right: -0.5rem;
+}
+    
+.classBox_content > a::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 51px;
+    border: 2px solid rgba(255,255,255,0.362);
+    top: -12px;
+    left: 12px;
+    transition: all 400ms;
+}
+    
+.classBox_content > a:hover::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 51px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    transition: all 400ms;
+}

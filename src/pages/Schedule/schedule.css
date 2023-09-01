@@ -1,0 +1,49 @@
+.maximus__schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    font-family: var(--font-family);
+    padding: 5rem 1.625rem 3rem 1.625rem;
+}
+
+.maximus__schedule-days{
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.maximus__schedule-days > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #d7d7d7;
+    border-radius: 1.5rem;
+    padding: 0.625rem 2rem;
+    transition: all 200ms ease;
+}
+
+.maximus__schedule-days > a:hover{
+    background: var(--color-red);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.maximus__schedule-days > a.active{
+    background: var(--color-red);
+    color: #fff;
+}
+
+.maximus__schedule-classes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 1250px;
+}

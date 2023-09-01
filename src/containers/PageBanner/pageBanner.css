@@ -1,0 +1,17 @@
+.maximus__pagebanner{
+    background: url('../../assets/pagebannerbg.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.maximus__pagebanner > h2{
+    font-family: var(--font-family);
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 1.875rem;
+}

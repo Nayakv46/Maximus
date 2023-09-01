@@ -1,0 +1,108 @@
+.maximus__sideabout{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    gap: 4rem;
+    position: fixed;
+    top: 0;
+    transition: all 400ms cubic-bezier(.67,0,.33,1);
+    width: 24rem;
+    z-index: 101;
+    padding: 2.5rem;
+    overflow-y: scroll;
+}
+
+.open-sideabout{
+    left: 0;
+}
+
+.closed-sideabout{
+    left: -100rem;
+}
+
+.maximus__sideabout-logo_close{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maximus__sideabout-logo_close > img,
+.maximus__sideabout-logo_close > svg {
+    height: 100%;
+}
+
+.maximus__sideabout-logo_close > svg { 
+    cursor: pointer;
+}
+
+.maximus__sideabout-aboutus,
+.maximus__sideabout-gallery,
+.maximus__sideabout-contact,
+.maximus__sideabout-follow{
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.maximus__sideabout-contact > h3,
+.maximus__sideabout-gallery > h3,
+.maximus__sideabout-aboutus > h3,
+.maximus__sideabout-follow > h3 {
+    font-size: 20px;
+}
+
+.maximus__sideabout-contact > p,
+.maximus__sideabout-aboutus > p {
+    color: var(--color-gray);
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.maximus__sideabout-gallery_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6rem;
+    width: 100%;
+}
+.maximus__sideabout-gallery_images > img {
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.maximus__sideabout-contact > p {
+    color: var(--color-gray);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.maximus__sideabout-contact > p > svg {
+    color: var(--color-red);
+}
+
+.maximus__sideabout-follow_icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 48px;
+
+}
+
+.maximus__sideabout-follow_icons > svg {
+    border: 12px solid transparent;
+    background: var(--color-red);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    .maximus__sideabout{
+        width: 100%;
+    }
+}

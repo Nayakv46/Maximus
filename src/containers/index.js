@@ -1,0 +1,13 @@
+export { default as Hero } from './Hero/Hero.jsx';
+export { default as WhoWeAre } from './WhoWeAre/WhoWeAre.jsx';
+export { default as Featured } from './Featured/Featured.jsx';
+export { default as WhyChooseUs } from './WhyChooseUs/WhyChooseUs.jsx';
+export { default as Team } from './Team/Team.jsx';
+export { default as Testimonials } from './Testimonials/Testimonials.jsx';
+export { default as HomeGallery } from './HomeGallery/HomeGallery.jsx';
+export { default as BMI } from './BMI/BMI.jsx';
+export { default as Pricing } from './Pricing/Pricing.jsx';
+export { default as HomeBlog } from './HomeBlog/HomeBlog.jsx';
+export { default as CallBanner } from './CallBanner/CallBanner.jsx';
+export { default as PageBanner } from './PageBanner/PageBanner.jsx';
+export { default as AboutUs } from './AboutUs/AboutUs.jsx';

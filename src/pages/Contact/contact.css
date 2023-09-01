@@ -1,0 +1,204 @@
+.maximus__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.maximus__contact-content{
+    padding: 4rem 1.625rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1250px;
+}
+
+.maximus__contact-content_info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: var(--font-family);
+}
+
+.maximus__contact-content_info > h2 {
+    font-size: 36px;
+}
+
+.maximus__contact-content_info > p{
+    font-weight: 500;
+    color: #646464;
+    line-height: 24px;
+}
+
+.maximus__contact-content_info-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.maximus__contact-content_info-details_location,
+.maximus__contact-content_info-details_hours,
+.maximus__contact-content_info-details_contact,
+.maximus__contact-content_info-details_socials{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.maximus__contact-content_info-details_location > h3,
+.maximus__contact-content_info-details_hours > h3,
+.maximus__contact-content_info-details_contact > h3,
+.maximus__contact-content_info-details_socials > h3{
+    font-size: 20px;
+}
+
+.maximus__contact-content_info-details_location > span,
+.maximus__contact-content_info-details_hours > span,
+.maximus__contact-content_info-details_contact > span,
+.maximus__contact-content_info-details_socials > span {
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--color-red);
+    top: 1.75rem;
+}
+
+.maximus__contact-content_info-details_location > p,
+.maximus__contact-content_info-details_hours > p,
+.maximus__contact-content_info-details_contact > p,
+.maximus__contact-content_info-details_socials > p{
+    font-size: 15px;
+    color: #646464;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.maximus__contact-content_info-details_socials-icons{
+    display: flex;
+    gap: 1.125rem;
+    font-size: 38px;
+    color: #000;
+}
+
+.maximus__contact-content_info-details_socials-icons > svg {
+    background: #efefef;
+    border: 0.625rem solid #efefef;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.maximus__contact-content_info-details_socials-icons > svg:hover{
+    background: var(--color-red);
+    border: 0.625rem solid var(--color-red);
+    color: #fff;
+}
+
+.maximus__contact-content_form{
+    flex: 1;
+    font-family: var(--font-family);
+}
+
+.maximus__contact-content_form > form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8f8f8;
+}
+
+.maximus__contact-content_form > form > h3{
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.maximus__contact-content_form > form > span {
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--color-red);
+    top: 4.25rem;
+}
+
+.maximus__contact-content_form > form > input,
+.maximus__contact-content_form > form > select {
+    font-family: var(--font-family);
+    padding: 0.75rem 1.25rem;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+}
+
+.maximus__contact-content_form > form > textarea{
+    font-family: var(--font-family);
+    padding: 0.75rem 1.25rem;
+    height: 140px;
+    font-size: 14px;
+    border: 1px solid #e4e4e4;
+}
+
+.maximus__contact-content_form > form > button{
+    font-family: var(--font-family);
+    padding: 1rem 2rem;
+    align-self: center;
+    font-weight: 700;
+    font-size: 14px;
+    background: var(--color-red);
+    color: #fff;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .maximus__contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .maximus__contact-content_info,
+    .maximus__contact-content_form{
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .maximus__contact-content_info,
+    .maximus__contact-content_form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .maximus__contact-content_info > h2,
+    .maximus__contact-content_info > p {
+        text-align: center;
+    }
+    .maximus__contact-content_info-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .maximus__contact-content_info-details_location > span,
+    .maximus__contact-content_info-details_hours > span,
+    .maximus__contact-content_info-details_contact > span,
+    .maximus__contact-content_info-details_socials > span {
+        position: absolute;
+        height: 4px;
+        width: 150px;
+        background: var(--color-red);
+        top: 1.75rem;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+.maximus__contact-map{
+    width: 100%;
+}

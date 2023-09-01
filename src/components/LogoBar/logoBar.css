@@ -1,0 +1,15 @@
+.maximus__logobar{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.maximus__logobar > img {
+    scale: 0.8;
+    transition: all 300ms ease;
+}
+
+.maximus__logobar > img:hover{
+    filter: invert(1);
+}

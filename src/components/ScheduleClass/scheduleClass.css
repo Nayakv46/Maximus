@@ -1,0 +1,79 @@
+.schedule_classBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #f2f2f2;
+    padding: 2rem 3.5rem;
+}
+
+.schedule_classBox-name,
+.schedule_classBox-time,
+.schedule_classBox-trainer,
+.schedule_classBox-button{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.schedule_classBox-time,
+.schedule_classBox-trainer{
+    align-items: center;
+}
+
+.schedule_classBox-name > p,
+.schedule_classBox-time > p,
+.schedule_classBox-trainer >p{
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+.schedule_classBox-name > h3,
+.schedule_classBox-time > h3,
+.schedule_classBox-trainer > h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.schedule_classBox-button{
+    align-items: flex-end;
+}
+.schedule_classBox-button > button{
+    width: fit-content;
+    font-family: var(--font-family);
+    padding: 0.625rem 1.25rem;
+    border: none;
+    line-height: 22.5px;
+    font-size: 15px;
+    border-radius: 2.5rem;
+    font-weight: 500;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.schedule_classBox-button > button:hover{
+    background: var(--color-red);
+}
+
+@media screen and (max-width: 900px){
+    .schedule_classBox{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .schedule_classBox-name,
+    .schedule_classBox-time,
+    .schedule_classBox-trainer{
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .schedule_classBox-name,
+    .schedule_classBox-button{
+        align-items: center;
+    }
+}

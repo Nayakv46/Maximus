@@ -1,0 +1,112 @@
+.maximus__bmi{
+    position: relative;
+    background: url('../../assets/BMIbackground.jpg');
+    background-size: cover;
+    background-position: 100%;
+    padding: 3rem 1.625rem;
+    display: flex;
+    justify-content: center;
+}
+
+.maximus__bmi-content{
+    position: relative;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    font-family: var(--font-family);
+    color: #fff;
+    z-index: 2;
+}
+
+.maximus__bmi-content > h2 {
+    font-size: 40px;
+    max-width: 520px;
+}
+
+.maximus__bmi-content > h2 > span {
+    color: var(--color-red);
+}
+
+.maximus__bmi-content > p {
+    color: #a1a1a1;
+    max-width: 520px;
+}
+.maximus__bmi-content_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.maximus__bmi-content_form > form {
+    max-width: 520px;
+    display: flex;
+    gap: 1rem;
+}
+
+.maximus__bmi-content_form > form > input{
+    width: 50%;
+    background: transparent;
+    font-size: 14px;
+    border: 2px solid #ffffff7d;
+    padding: 0.875rem;
+    font-family: var(--font-family);
+    color: #fff;
+}
+
+.maximus__bmi-content_form > p {
+    display: flex;
+    gap: 1rem;
+    max-width: 520px;
+}
+
+.maximus__bmi-content_form > p > span {
+    width: 50%;
+}
+.maximus__bmi-content_form > p > span > span {
+    color: var(--color-red);
+    font-weight: 500;
+}
+
+.maximus__bmi-content_form > button{
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    background: #323232;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.maximus__bmi-content_form > button:hover{
+    background: var(--color-red);
+}
+
+@media screen and (max-width: 800px){
+    .maximus__bmi::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.63);
+        pointer-events: none;
+        z-index: 1;
+    }
+    .maximus__bmi-content > p {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .maximus__bmi-content > h2,
+    .maximus__bmi-content > p,
+    .maximus__bmi-content > form {
+        width: 100%;
+    }
+}

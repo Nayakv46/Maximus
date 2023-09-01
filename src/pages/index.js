@@ -1,0 +1,9 @@
+export { default as Home } from './Home/Home';
+export { default as About } from './About/About';
+export { default as Gallery } from './Gallery/Gallery';
+export { default as Gallery2 } from './Gallery2/Gallery2';
+export { default as Blog } from './Blog/Blog';
+export { default as PricingPage } from './PricingPage/PricingPage';
+export { default as Classes } from './Classes/Classes';
+export { default as Contact } from './Contact/Contact';
+export { default as SignUp } from './SignUp/SignUp';

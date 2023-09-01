@@ -1,0 +1,116 @@
+.maximus__homegallery{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 1.625rem;
+}
+
+.maximus__homegallery > img {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+}
+
+.maximus__homegallery-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.maximus__homegallery-text > p:first-child{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+}
+
+.maximus__homegallery-text > img{
+    position: relative;
+    top: -2rem;
+    width: 250px;
+}
+
+.maximus__homegallery-text > h2{
+    font-size: 34px;
+}
+
+.maximus__homegallery-text > p:nth-child(4){
+    font-size: 15px;
+    color: #646464;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.maximus__homegallery-photos{
+    max-width: 1250px;
+    display: grid;
+    width: 100%;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.maximus__homegallery-photos_1{
+    height: 410px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: url('../../assets/homegalleryimg1.jpg');
+    
+}
+
+.maximus__homegallery-photos_2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: url('../../assets/homegalleryimg2.jpg');
+    background-color: lightgray;
+    background-position: 0 -131px;
+    background-size: cover;
+}
+
+.maximus__homegallery-photos_3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: url('../../assets/homegalleryimg3.jfif');
+    
+}
+.maximus__homegallery-photos_4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: url('../../assets/homegalleryimg4.jfif');
+}
+.maximus__homegallery-photos_5{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: url('../../assets/homegalleryimg5.jfif');
+    background-position: 50%;
+}
+
+.maximus__homegallery-photos_1,
+.maximus__homegallery-photos_2,
+.maximus__homegallery-photos_3,
+.maximus__homegallery-photos_4,
+.maximus__homegallery-photos_5{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 450px){
+    .maximus__homegallery{
+        display: none;
+    }
+}

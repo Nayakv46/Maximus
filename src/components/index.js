@@ -1,0 +1,12 @@
+export { default as Navbar } from './Navbar/Navbar';
+export { default as SideAbout } from './SideAbout/SideAbout';
+export { default as WhoContentBox } from './WhoContentBox/WhoContentBox';
+export { default as FeaturedCTA } from './FeaturedCTA/FeaturedCTA';
+export { default as TeamMember } from './TeamMember/TeamMember';
+export { default as LogoBar } from './LogoBar/LogoBar';
+export { default as PricingPlan } from './PricingPlan/PricingPlan';
+export { default as HomeBlogBox } from './HomeBlogBox/HomeBlogBox';
+export { default as Footer } from './Footer/Footer';
+export { default as ScheduleClass } from './ScheduleClass/ScheduleClass';
+export { default as Class } from './Class/Class';
+export { default as BlogArticle } from './BlogArticle/BlogArticle';

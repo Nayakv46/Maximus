@@ -1,0 +1,146 @@
+.maximus__pricingplan{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: var(--shadow);
+    width: 400px;
+    padding-bottom: 1rem;
+}
+
+.maximus__pricingplan:hover .maximus__pricingplan_image {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+.maximus__pricingplan_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 400ms ease;
+}
+
+.maximus__pricingplan_image > img {
+    position: relative;
+    width: 100%;
+}
+
+.maximus__pricingplan_image > h3{
+    position: relative;
+    top: -2.625rem;
+    padding: 1.125rem;
+    background: #fff;
+    width: 250px;
+    font-size: 20px;
+    color: var(--color-red);
+}
+
+.maximus__pricingplan_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    padding-bottom: 3rem;
+}
+
+.maximus__pricingplan_content > p {
+    position: relative;
+    gap: 0.5rem;
+    font-size: 30px;
+    color: #6d6d6d;
+    margin-top: -1rem;
+}
+
+.maximus__pricingplan_content-price{
+    text-align: center;
+    font-size: 55px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+.maximus__pricingplan_content > p > span:not(.maximus__pricingplan_content-price) {
+    position: absolute;
+}
+
+.maximus__pricingplan_content > p > span:first-child{
+    left: -2rem;
+}
+.maximus__pricingplan_content > p > span:nth-child(3){
+    top: 1.5rem;
+    right: -4rem;
+    font-size: 22px;
+}
+
+.maximus__pricingplan_content-classes{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #646464;
+    font-weight: 500;
+}
+
+.maximus__pricingplan_content > a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: var(--color-red);
+    height: 55px;
+    width: 200px;
+    top: 1rem;
+    gap: 0.25rem;
+    transition: all 400ms;
+}
+    
+.maximus__pricingplan_content > a:hover {
+    background: var(--color-red);
+}
+.maximus__pricingplan_content > a > svg{
+    color: #ffffff;
+    margin-right: -0.5rem;
+}
+    
+.maximus__pricingplan_content > a::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 51px;
+    border: 2px solid #ff033636;
+    top: -12px;
+    left: 12px;
+    transition: all 400ms;
+}
+    
+.maximus__pricingplan_content > a:hover::after{
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 51px;
+    border: 2px solid var(--color-red);
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    transition: all 400ms;
+}
+
+@media screen and (max-width: 500px) {
+    .maximus__pricingplan{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .maximus__pricingplan_image > h3 {
+        width: 75%;
+    }
+}
