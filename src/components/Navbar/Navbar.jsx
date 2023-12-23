@@ -13,14 +13,14 @@ import logo from '../../assets/maximus-logo.png';
 
 const Menu = (props) => (
   <>
-    <p><Link to="/" onClick={() => {props.setToggleMenu(false)}} >Home</Link></p>
-    <p><Link to="/about" onClick={() => {props.setToggleMenu(false)}} >About</Link></p>
-    <p><Link to="/gallery/page-1" onClick={() => {props.setToggleMenu(false)}} >Gallery</Link></p>
-    <p><Link to="/schedule/monday" onClick={() => {props.setToggleMenu(false)}} >Schedule</Link></p>
-    <p><Link to="/blog" onClick={() => {props.setToggleMenu(false)}} >Blog</Link></p>
-    <p><Link to="/pricing" onClick={() => {props.setToggleMenu(false)}} >Pricing</Link></p>
-    <p><Link to="/classes" onClick={() => {props.setToggleMenu(false)}} >Classes</Link></p>
-    <p><Link to="/contact" onClick={() => {props.setToggleMenu(false)}} >Contact</Link></p>
+    <li><Link to="/" onClick={() => {props.setToggleMenu(false)}} >Home</Link></li>
+    <li><Link to="/about" onClick={() => {props.setToggleMenu(false)}} >About</Link></li>
+    <li><Link to="/gallery/page-1" onClick={() => {props.setToggleMenu(false)}} >Gallery</Link></li>
+    <li><Link to="/schedule/monday" onClick={() => {props.setToggleMenu(false)}} >Schedule</Link></li>
+    <li><Link to="/blog" onClick={() => {props.setToggleMenu(false)}} >Blog</Link></li>
+    <li><Link to="/pricing" onClick={() => {props.setToggleMenu(false)}} >Pricing</Link></li>
+    <li><Link to="/classes" onClick={() => {props.setToggleMenu(false)}} >Classes</Link></li>
+    <li><Link to="/contact" onClick={() => {props.setToggleMenu(false)}} >Contact</Link></li>
   </>
 )
 
@@ -38,9 +38,9 @@ const Navbar = () => {
         </Link>
       </div>
       
-      <div className="maximus__navbar-links">
+      <ul className="maximus__navbar-links">
         <Menu />
-      </div>
+      </ul>
       
       <div className="maximus__navbar-cta">
         <div className="maximus__navbar-cta_links">
@@ -64,10 +64,10 @@ const Navbar = () => {
 
         <SideAbout className={toggleSideAbout ? "open-sideabout" : "closed-sideabout"} setToggleSideAbout={setToggleSideAbout}/>
 
-    <div className={`maximus__navbar-mobile ${toggleMenu ? "open-menu" : "closed-menu"}`}>
+    <ul className={`maximus__navbar-mobile ${toggleMenu ? "open-menu" : "closed-menu"}`}>
       <IoIosClose color="#ff0336" size={56} onClick={() => setToggleMenu(false)} />
       <Menu setToggleMenu={setToggleMenu}/>
-    </div>
+    </ul>
     </>
   )
 }

@@ -17,21 +17,23 @@
     display: flex;
     gap: 1.5rem;
     font-weight: 500;
+    list-style: none;
 }
 
-.maximus__navbar-links > p > a{
+.maximus__navbar-links li > a{
     text-decoration: none;
     color: white;
     transition: all 300ms;
 }
 
-.maximus__navbar-links > p > a:hover {
+.maximus__navbar-links li > a:hover {
     color: var(--color-red);
 }
 
 .maximus__navbar-cta{
     display: flex;
     gap: 1.25rem;
+
 }
 
 .maximus__navbar-cta_links{
@@ -59,7 +61,7 @@
     color: white;
     transition: all 300ms;
     cursor: pointer;
-
+    
 }
 
 .maximus__navbar-cta_links > svg:hover,
@@ -84,7 +86,7 @@
     gap: 1rem;
     color: white;
     text-decoration: none;
-
+    
 }
 
 .maximus__navbar-cta_join > a > svg {
@@ -114,19 +116,19 @@
 }
 
 .maximus__navbar-mobile{
-    align-items: center;
-    background-color: #fff;
+    position: fixed;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 1.875rem;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    transition: all 300ms ease-in-out;
+    height: 100vh;
     width: 100%;
+    background-color: #fff;
+    text-align: center;
+    list-style: none;
+    transition: all 300ms ease-in-out;
     z-index: 100;
 }
 
@@ -145,7 +147,7 @@
     cursor: pointer;
 }
 
-.maximus__navbar-mobile > p > a{
+.maximus__navbar-mobile li > a{
     text-decoration: none;
     color: black;
     font-family: var(--font-family);
@@ -154,7 +156,7 @@
     transition: 200ms ease;
 }
 
-.maximus__navbar-mobile > p > a:hover{
+.maximus__navbar-mobile li > a:hover{
     color: var(--color-red);
 }
 
@@ -171,5 +173,22 @@
 @media screen and (max-width: 600px){
     .maximus__navbar-cta_join{
         display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .maximus__navbar{
+        gap: 1rem;
+    }
+    .maximus__navbar-cta{
+        gap: 0.75rem;
+    }
+    .maximus__navbar-cta_sign-info{
+        gap: 0.75rem;
+    }
+    .maximus__navbar-logo > a > img {
+        height: auto;
+        max-width: 100%;
+        width: auto;
     }
 }
